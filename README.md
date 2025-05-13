@@ -5,7 +5,9 @@ The “Bank Document Extractor” is a web-based application that integrates Opt
 
 2. Introduction:
 Bank documents typically contain essential financial details such as account holder names, account numbers, IFSC codes, and branch information. Manual extraction of this data is time-consuming, prone to human error, and often inefficient for high-volume workflows. With advancements in Optical Character Recognition (OCR) and Natural Language Processing (NLP), automating this task is now highly practical. This project harnesses PaddleOCR for precise text extraction and Gemma3:4b, a lightweight LLM via Ollama, to interpret and structure the extracted text. To ensure ease of use, the application employs Gradio for the front-end interface, enabling users to interact with the system without any technical expertise. Combined with LocalTunnel for public access in notebook environments, the solution presents a robust, intelligent pipeline for automated bank document processing.
-3. Objective:
+
+
+4. Objective:
 The primary goal of this project is to simplify and automate the extraction of important banking details from passbook images. The system is designed to:
 - Accurately Identify and Extract Key Information:
   - Extract the account holder’s name from passbook images with precision.
@@ -54,6 +56,7 @@ The user interface is enhanced with responsive CSS for better usability. The pro
 8. Results and Discussion:
 The application performs well in extracting banking details from standard document formats. Testing on 20 different bank statements and cheque leaf samples showed an accuracy rate of 92% in data recognition and 85% in structure formatting. Errors occurred mainly when images were heavily distorted or blurred. The combination of PaddleOCR and Gemma3:4B showed significant improvement over using OCR alone, as the LLM could correctly infer contextual details (like distinguishing IFSC code from MICR codes).
 Performance tests on Google Colab with 4GB RAM showed that the full process—from upload to data display—completes within 20 seconds on average. The intuitive UI and tunnel-based accessibility also make it highly usable for real-time scenarios like KYC processing or loan document verification.
+
 OUTLOOK:
 ![image alt](https://github.com/Anibrata-Ghatak/Bank_Data_Extraction/blob/c0cd91dff8aefe886412dc332a17c1943a6a1978/Screenshot%202025-05-06%20130418.png)
 
@@ -76,6 +79,8 @@ OUTLOOK:
                              INPUT                                                         OUTPUT 
 Output for bad Bank Passbook image:
 
+![image alt](https://github.com/Anibrata-Ghatak/Bank_Data_Extraction/blob/6e9fa1d4466f506cf203c10c3d30f1b80738ba32/Screenshot%202025-05-07%20115215.png)
+
 
 
 
@@ -88,18 +93,6 @@ Output for bad Bank Passbook image:
 
                             
                                  Input                                                         Output
-
-
-9.Flowchart:
-
-
-
-
-
-
-
-
-
 
 
 
