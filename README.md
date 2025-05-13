@@ -55,7 +55,7 @@ The user interface is enhanced with responsive CSS for better usability. The pro
 The application performs well in extracting banking details from standard document formats. Testing on 20 different bank statements and cheque leaf samples showed an accuracy rate of 92% in data recognition and 85% in structure formatting. Errors occurred mainly when images were heavily distorted or blurred. The combination of PaddleOCR and Gemma3:4B showed significant improvement over using OCR alone, as the LLM could correctly infer contextual details (like distinguishing IFSC code from MICR codes).
 Performance tests on Google Colab with 4GB RAM showed that the full process—from upload to data display—completes within 20 seconds on average. The intuitive UI and tunnel-based accessibility also make it highly usable for real-time scenarios like KYC processing or loan document verification.
 OUTLOOK:
-
+![image alt](https://github.com/Anibrata-Ghatak/Bank_Data_Extraction/blob/c0cd91dff8aefe886412dc332a17c1943a6a1978/Screenshot%202025-05-06%20130418.png)
 
 
 
