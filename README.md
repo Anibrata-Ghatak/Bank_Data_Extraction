@@ -52,7 +52,9 @@ Text Interpretation (Mistral LLM via Ollama)
 LLM receives the OCR text and returns a structured dictionary containing:
 
 "Account Holder Name"
+
 "Account Number"
+
 "IFSC Code"
 
 Text Display (Gradio)
